@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jan",
+      "surname": "Kowalski",
+      "startDate": "2020-11-10",
+      "email": "test@gmail.com",
+      "password": "pass",
+      "role": "employee"
+    },
+    {
+      "id": 2,
+      "name": "Andrzej",
+      "surname": "Kowalski",
+      "startDate": "2020-11-10",
+      "email": "test2@gmail.com",
+      "password": "pass",
+      "role": "employee"
+    },
+    {
+      "id": 3,
+      "name": "Mariusz",
+      "surname": "Kowalski",
+      "startDate": "2020-11-10",
+      "email": "test3@gmail.com",
+      "password": "pass",
+      "role": "admin"
+    },
+    {
+      "id": 3,
+      "name": "Mariusz",
+      "surname": "Kowalski",
+      "startDate": "2020-11-10",
+      "email": "test4@gmail.com",
+      "password": "pass",
+      "role": "admin"
+    }
+  ]
+}

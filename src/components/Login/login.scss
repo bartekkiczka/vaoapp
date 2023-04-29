@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.login {
+  form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-top: 30px;
+    }
+
+    input {
+      height: 30px;
+      outline: none;
+      padding: 0 10px;
+    }
+
+    button {
+      @include defaultButton;
+      margin: 30px auto;
+    }
+  }
+
+  .S9gUrf-YoZ4jf {
+    width: 300px;
+    margin: 30px auto;
+  }
+
+  &__error {
+    margin: 0;
+    color: red;
+  }
+
+  &-error-msg {
+    margin: 20px 0;
+    color: red;
+    text-align: center;
+  }
+}

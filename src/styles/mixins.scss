@@ -1,0 +1,16 @@
+@import './variables.scss';
+
+@mixin defaultButton {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s all ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

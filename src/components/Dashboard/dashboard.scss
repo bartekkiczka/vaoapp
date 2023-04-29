@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+
+.dashboard {
+  &__tabs {
+    display: flex;
+
+    &-tab {
+      color: white;
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s all ease;
+
+      &:first-of-type,
+      &:last-of-type {
+        border: 2px solid black;
+      }
+
+      &:nth-of-type(2) {
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+      }
+
+      &:hover {
+        background-color: $c-selectedTabColor;
+      }
+    }
+
+    .tab-selected {
+      background-color: $c-selectedTabColor;
+    }
+  }
+}

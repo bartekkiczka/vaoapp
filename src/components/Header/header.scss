@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 70px;
+  // background-color: $c-mainEmployeeThemeColor;
+  color: white;
+
+  &__right {
+    p {
+      cursor: pointer;
+    }
+  }
+}

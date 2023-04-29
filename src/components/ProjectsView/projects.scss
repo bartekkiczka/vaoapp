@@ -1,0 +1,152 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.projects {
+  padding: 0 30px;
+  &__section {
+    font-size: 25px;
+    font-weight: bold;
+
+    &:last-of-type {
+      margin: 100px 0;
+    }
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  &__element {
+    border: 1px solid black;
+    margin: 10px 0;
+    position: relative;
+    height: fit-content;
+
+    &-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+
+      div,
+      button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      div {
+        background-color: $c-selectedTabColor;
+        color: white;
+        width: 150px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+      }
+
+      button {
+        @include defaultButton;
+        width: 150px;
+        background-color: $c-deleteButtonColor;
+
+        &:hover {
+          transform: translate(-50%, -50%) scale(1.05);
+        }
+      }
+    }
+
+    &-content {
+      padding: 10px 20px;
+    }
+
+    &-date {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    &-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    &-delete,
+    &-add {
+      width: 150px;
+      height: 30px;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      outline: none;
+      cursor: pointer;
+      margin-top: 20px;
+      display: block;
+    }
+
+    &-delete {
+      background-color: $c-deleteButtonColor;
+    }
+
+    &-add {
+      background-color: $c-selectedTabColor;
+    }
+
+    &-workers {
+      max-width: 450px;
+      display: flex;
+      flex-wrap: wrap;
+
+      p {
+        margin: 0 5px 0 0;
+      }
+    }
+  }
+
+  &__workers-modal {
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 0 10px;
+    text-align: center;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-worker {
+      margin: 10px 0;
+      width: 40%;
+      cursor: pointer;
+      border: 2px solid $c-selectedTabColor;
+      transition: 0.2s all ease;
+
+      &:hover {
+        background-color: $c-selectedTabColor;
+        color: white;
+      }
+    }
+    .worker-selected {
+      background-color: $c-selectedTabColor;
+      color: white;
+    }
+
+    button {
+      margin: 20px 0;
+      width: 100px;
+      height: 30px;
+      background-color: $c-selectedTabColor;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+}

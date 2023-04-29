@@ -1,0 +1,14 @@
+.evaluations__admin-view {
+  padding: 0 50px;
+
+  &-element {
+    margin: 50px 0;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+
+    &-avarage {
+      margin-top: 30px;
+    }
+  }
+}
